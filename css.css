@@ -1,0 +1,85 @@
+body {
+	background-color: black;
+	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+	overflow: hidden;
+}
+.animation{
+	-webkit-animation: type 1s steps(11) 1s 1 normal both,
+			   cursor 700ms steps(44) infinite normal;
+	        animation: type 1s steps(11) 1s 1 normal both,
+			   cursor 700ms steps(44) infinite normal;
+}
+.anim-rev{
+	-webkit-animation: type2 1s steps(7) 1s 1 reverse both,
+			   cursor 900ms steps(7) 6 normal;
+	        animation: type2 1s steps(7) 1s 1 reverse both,
+			   cursor 900ms steps(7) 6 normal;
+}
+@-webkit-keyframes type{
+	to{width: 0}
+	from{width: 5.7em}
+}
+@keyframes type{
+	to{width: 0}
+	from{width: 5.7em}
+}
+
+@-webkit-keyframes type2{
+	to{width: 0}
+	from{width: 3.6em}
+}
+@keyframes type2{
+	to{width: 0}
+	from{width: 3.6em}
+}
+@-webkit-keyframes cursor{
+	0%{border-right-color: transparent}
+	50%{border-right-color: rgba(255,255,255,.75)}
+	100%{border-right-color: transparent}
+}
+@keyframes cursor{
+	0%{border-right-color: transparent}
+	50%{border-right-color: rgba(255,255,255,.75)}
+	100%{border-right-color: transparent}
+}
+.content{
+/*	padding-right: 7px;*/
+	margin-right: 7px;
+	width: 5.7em;
+	border-right: 3px solid rgba(0,0,0,.75);
+	white-space: nowrap;
+	overflow: hidden;
+	color: #00a9e0;
+	text-align:center;
+}
+.static{
+	color: white;
+	margin-left: 15px;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+}  
+span{
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	        transform: translateY(-50%);
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	font-size: 700%;
+	width:100%;
+	text-align: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+}
+span>.info{
+	-ms-flex-preferred-size: 100%;
+	    flex-basis: 100%;
+	color: white;
+	font-size: 21.5%;
+	text-transform: uppercase;
+}
