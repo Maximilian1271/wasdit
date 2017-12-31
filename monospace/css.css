@@ -76,7 +76,7 @@ span{
 	    -ms-flex-pack: center;
 	        justify-content: center;
 }
-span>*:not(.info){
+span>*:not(.info):not(a){
 	font-family: monospace;
 }
 span>.info{
@@ -85,4 +85,13 @@ span>.info{
 	color: white;
 	font-size: 21.5%;
 	text-transform: uppercase;
+}
+.redirect{
+	display: none;
+	font-size: 24px;
+	top: 75%;
+}
+.redirect a:visited,
+.redirect a{
+	color: #00a9e0;
 }
