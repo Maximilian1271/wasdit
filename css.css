@@ -83,3 +83,8 @@ span>.info{
 	font-size: 21.5%;
 	text-transform: uppercase;
 }
+.redirect{
+	display: none;
+	font-size: 24px;
+	top: 75%;
+}
