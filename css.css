@@ -17,20 +17,20 @@ body{
 }
 @-webkit-keyframes type{
 	to{width: 0}
-	from{width: 5.7em}
+	from{width: 6em}
 }
 @keyframes type{
 	to{width: 0}
-	from{width: 5.7em}
+	from{width: 6em}
 }
 
 @-webkit-keyframes type2{
 	to{width: 0}
-	from{width: 3.6em}
+	from{width: 3.8em}
 }
 @keyframes type2{
 	to{width: 0}
-	from{width: 3.6em}
+	from{width: 3.8em}
 }
 @-webkit-keyframes cursor{
 	0%{border-right-color: transparent}
@@ -45,7 +45,7 @@ body{
 .content{
 /*	padding-right: 7px;*/
 	margin-right: 7px;
-	width: 5.7em;
+	width: 6em;
 	border-right: 3px solid rgba(0,0,0,.75);
 	white-space: nowrap;
 	overflow: hidden;
@@ -75,6 +75,9 @@ span{
 	-webkit-box-pack: center;
 	    -ms-flex-pack: center;
 	        justify-content: center;
+}
+span>*:not(.info){
+	font-family: monospace;
 }
 span>.info{
 	-ms-flex-preferred-size: 100%;
